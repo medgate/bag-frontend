@@ -1,0 +1,86 @@
+{
+  "header": {
+    "title": "Coronavirus check"
+  },
+  "footer": {
+    "office": "©2020 Federal Office of Public Health FOPH",
+    "legal": "Legal basis",
+    "imprint": "Imprint",
+    "link": {
+      "office": "https://www.bag.admin.ch/bag/en/home.html",
+      "legal": "https://foph-coronavirus.ch/legal-basis/",
+      "imprint": "https://foph-coronavirus.ch/imprint/"
+    }
+  },
+  "errors": {
+    "title": "Coronavirus check",
+    "back": "Back",
+    "notFound": "Page not found",
+    "forbidden": "Forbidden",
+    "unexpected": "An unexpected error has occurred. Please retry."
+  },
+  "intro": {
+    "title": "Coronavirus check",
+    "description": "Answer all the questions in the check. Then you will be given a recommendation of what to do.",
+    "start": "Start check",
+    "disclaimer": {
+      "title": "Important notice:",
+      "main": "The coronavirus check is not a substitute for medical advice, diagnosis or treatment. The symptoms described in the check may also occur in relation to other diseases requiring different measures.",
+      "advice": "Always consult a doctor if you have obvious symptoms that get worse or worry you."
+    }
+  },
+  "screening": {
+    "next": "Next",
+    "back": "Back",
+    "restart": "Repeat check",
+    "bag": "Website of the FOPH"
+  },
+  "profile": {
+    "title": "Personal details",
+    "description": "Specify your gender, age and canton.",
+    "button": "Next",
+    "age": {
+      "label": "Age",
+      "disclaimer": "The entered age can influence the result.",
+      "required": "Specify your age.",
+      "invalid": "You must enter an age between 0 and 120.",
+      "years": "years"
+    },
+    "gender": {
+      "label": "Gender",
+      "male": "Male",
+      "female": "Female",
+      "other": "Other",
+      "required": "Gender is required."
+    },
+    "canton": {
+      "label": "Canton",
+      "required": "Canton is required.",
+      "invalid": "Please write the full name of your canton."
+    },
+    "symptomsQuestion": "Select all the symptoms you currently have in the list.",
+    "symptomsDescription": "You can also select more than one symptom or tick the «No symptom» field. At least one field must be selected.",
+    "symptoms": {
+      "noSymptoms": "No symptom (from the list below)",
+      "fever": "High temperature",
+      "weakness": "General weakness, feeling unwell",
+      "headaches": "Headache",
+      "sniffles": "Head cold",
+      "soreThroat": "Sore throat",
+      "cough": "Cough",
+      "shortnessBreath": "Shortness of breath",
+      "chestPain": "Chest pain",
+      "gastro": "Gastrointestinal symptoms (nausea, vomiting, diarrhoea, stomach ache)",
+      "musclePain": "Aching muscles",
+      "lostSmellOrTaste": "Sudden loss of sense of smell and/or taste",
+      "skinRash": "Skin rash"
+    }
+  },
+  "language": {
+    "label": "Language",
+    "german": "Deutsch",
+    "french": "Français",
+    "italian": "Italiano",
+    "english": "English"
+  }
+}

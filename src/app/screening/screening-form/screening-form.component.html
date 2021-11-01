@@ -1,0 +1,19 @@
+<bag-header-screening></bag-header-screening>
+
+<bag-unexpected-error *ngIf="error"
+                      [error]="error">
+</bag-unexpected-error>
+
+<bag-screening-question *ngIf="profile && questionNode && !recommendation"
+                        [questionNode]="questionNode"
+                        [loading]="loading"
+                        (userAnswer)="submitAnswer($event)"
+                        (goBack)="goBack($event)">
+</bag-screening-question>
+
+<bag-recommendation-summary *ngIf="recommendation"
+                            [recommendation]="recommendation">
+</bag-recommendation-summary>
+
+<bag-footer *ngIf="!loading && (questionNode || recommendation)">
+</bag-footer>

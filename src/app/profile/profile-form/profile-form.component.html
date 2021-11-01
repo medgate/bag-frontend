@@ -1,0 +1,152 @@
+<bag-header-intro></bag-header-intro>
+
+<main (click)="isIEOrEdge ? filterCantonAutoComplete() : ''" class="content">
+
+  <form [formGroup]="profileForm">
+    <div *ngIf="profileStep === 0">
+    <h1>{{ 'profile.title' | translate }}</h1>
+    <h3>{{ 'profile.description' | translate }}</h3>
+
+    <div class="radio-button-module">
+      <mat-radio-group required
+                       formControlName="gender"
+                       [disabled]="loading">
+        <mat-label class="label-radio">
+          {{ 'profile.gender.label' | translate }}&nbsp;*
+        </mat-label>
+        <br>
+        <mat-radio-button value="FEMALE">
+          {{ 'profile.gender.female' | translate }}
+        </mat-radio-button>
+        <br>
+        <mat-radio-button value="MALE">
+          {{ 'profile.gender.male' | translate }}
+        </mat-radio-button>
+        <br>
+        <mat-radio-button value="OTHER">
+          {{ 'profile.gender.other' | translate }}
+        </mat-radio-button>
+      </mat-radio-group>
+      <mat-error *ngIf="profileForm.get('gender').hasError('required')
+                    && (profileForm.get('gender')?.dirty || profileForm.get('gender')?.touched)">
+        {{ 'profile.gender.required' | translate }}
+      </mat-error>
+    </div>
+
+    <mat-form-field class="small-input age-field full-width"
+                    [floatLabel]="'always'">
+      <mat-label>{{ 'profile.age.label' | translate }}</mat-label>
+      <input type="number"
+             matInput
+             class="right-align"
+             formControlName="age"
+             required
+             min="0" max="120"
+             [readonly]="loading"
+             (keypress)="checkAgeMaxLength()">
+      <mat-hint>{{ 'profile.age.disclaimer' | translate }}</mat-hint>
+      <mat-error *ngIf="profileForm.get('age').hasError('required')
+                    && (profileForm.get('age')?.dirty || profileForm.get('age')?.touched)">
+        {{ 'profile.age.required' | translate }}
+      </mat-error>
+      <mat-error *ngIf="profileForm.get('age').hasError('min')
+                    && !profileForm.get('age').hasError('required')
+                    && (profileForm.get('age')?.dirty || profileForm.get('age')?.touched)">
+        {{ 'profile.age.invalid' | translate }}
+      </mat-error>
+      <mat-error *ngIf="profileForm.get('age').hasError('max')
+                    && !profileForm.get('age').hasError('required')
+                    && (profileForm.get('age')?.dirty || profileForm.get('age')?.touched)">
+        {{ 'profile.age.invalid' | translate }}
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="full-width"
+                    [floatLabel]="'always'"
+                    *ngIf="!isIEOrEdge">
+      <mat-label class="label-color">
+        {{ 'profile.canton.label' | translate }}
+      </mat-label>
+      <input type="text"
+             matInput
+             formControlName="canton"
+             required
+             [matAutocomplete]="auto"
+             [readonly]="loading"
+             (click)="filterCantonAutoComplete()">
+      <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete" [displayWith]="displayCanton">
+        <mat-option *ngFor="let canton of filteredCantonOptions | async"
+                    [value]="canton">
+          {{ canton.name }}
+        </mat-option>
+      </mat-autocomplete>
+      <mat-error *ngIf="profileForm.get('canton').hasError('required')
+                    && (profileForm.get('canton')?.dirty || profileForm.get('canton')?.touched)">
+        {{ 'profile.canton.required' | translate }}
+      </mat-error>
+      <mat-error *ngIf="profileForm.get('canton').hasError('invalid')
+                    && !profileForm.get('canton').hasError('required')
+                    && (profileForm.get('canton')?.dirty || profileForm.get('canton')?.touched)">
+        {{ 'profile.canton.invalid' | translate }}
+      </mat-error>
+    </mat-form-field>
+
+    <div *ngIf="isIEOrEdge">
+      <label class="label-color">
+        {{ 'profile.canton.label' | translate }}
+      </label>
+      <select class="select-ie"
+              formControlName="canton"
+              required
+              (click)="filterCantonAutoComplete()">
+        <option value="" selected></option>
+        <option *ngFor="let canton of filteredCantonOptions | async"
+                [value]="canton.name"
+                [ngValue]="canton">
+          {{ canton.name }}
+        </option>
+      </select>
+    </div>
+  </div>
+  <div *ngIf="profileStep === 1">
+    <h1>{{ 'profile.symptomsQuestion' | translate }}</h1>
+    <h3>{{ 'profile.symptomsDescription' | translate }}</h3>
+    <div
+      formArrayName="symptoms"
+      class="checkbox-module">
+        <div *ngFor="let symptom of getSymptoms()" class="col-md-2">
+          <mat-checkbox
+            [value]=symptom
+            [checked]=isChecked(symptom)
+            (change)="onCheckChange($event)">
+            {{ 'profile.symptoms.' + symptoms[symptom] | translate }}
+        </mat-checkbox>
+        </div>
+    </div>
+  </div>
+    <div class="button-area">
+      <button mat-flat-button
+              type="button"
+              color="basic"
+              class="back-button"
+              (click)="goBack()"
+              [disabled]="loading">
+        <img src="assets/images/arrow-back.svg" alt="&#8592;">
+        <span class="text-span">
+          {{ 'screening.back' | translate }}
+        </span>
+      </button>
+      <button mat-flat-button
+              type="button"
+              color="primary"
+              class="next-button"
+              (click)="goNext()"
+              [class.spinner]="loading"
+              [disabled]="isNextDisabled()">
+        {{ 'profile.button' | translate }}
+      </button>
+    </div>
+  </form>
+</main>
+
+<bag-footer></bag-footer>

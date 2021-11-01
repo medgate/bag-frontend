@@ -1,0 +1,7 @@
+<div class="error">
+  <h2 *ngIf="error?.error?.reason">
+    {{ error?.error?.reason }}
+  </h2>
+  <div>{{ 'errors.unexpected' | translate }}</div>
+  <a class="back" routerLink="/">{{ 'errors.back' | translate }}</a>
+</div>

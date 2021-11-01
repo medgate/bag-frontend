@@ -1,0 +1,53 @@
+.severity-high {
+  background-color: #f3e0e2;
+}
+
+.severity-medium {
+  background-color: #f3eee0;
+}
+
+.severity-low {
+  background-color: #d1ebcc;
+}
+
+.severity-none {
+  background-color: #d1ebcc;
+}
+
+.severity-content {
+  padding: 2em;
+  box-sizing: border-box;
+
+  @media (min-width: 768px) {
+    padding: 3em;
+    width: 750px;
+    margin-left: -375px;
+    position: relative;
+    left: 50%;
+  }
+}
+
+.recommendation-title {
+  width: 750px;
+  margin-left: -50px;
+
+  @media (max-width: 768px) {
+    margin: 0 0 12px;
+    width: 100%;
+  }
+}
+
+.medgate-recommendation-title {
+  width: 750px;
+  margin-left: -50px;
+  margin-top: 40px;
+
+  @media (max-width: 768px) {
+    margin: 40px 0 12px;
+    width: 100%;
+  }
+}
+
+.medgate-recommendation-description {
+  margin-top: 40px;
+}

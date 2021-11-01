@@ -1,0 +1,41 @@
+<main *ngIf="questionNode" class="content">
+  <h1 [innerHTML]="questionNode.question" class="question-title"></h1>
+
+  <p [innerHTML]="questionNode.description"></p>
+
+  <form [formGroup]="questionForm"
+        (ngSubmit)="submitForm()">
+    <mat-radio-group
+        aria-label="Answer"
+        formControlName="answer"
+        [disabled]="loading">
+      <mat-radio-button *ngFor="let answer of questionNode.answers"
+                        [value]="answer">
+        {{ answer.text }}
+      </mat-radio-button>
+    </mat-radio-group>
+
+    <div class="button-area">
+      <button mat-flat-button
+              type="button"
+              color="basic"
+              class="back-button"
+              [disabled]="loading"
+              (click)="goBackButton()">
+        <img src="assets/images/arrow-back.svg" alt="&#8592;">
+        <span class="text-span">
+          {{ 'screening.back' | translate }}
+        </span>
+      </button>
+      <button mat-flat-button
+              type="submit"
+              color="primary"
+              class="next-button"
+              [class.spinner]="loading"
+              [disabled]="!questionForm.valid || loading">
+        {{ 'screening.next' | translate }}
+      </button>
+    </div>
+
+  </form>
+</main>

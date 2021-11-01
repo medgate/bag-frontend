@@ -1,0 +1,37 @@
+<div class="recommendation-container">
+  <div [ngClass]="getSeverityClass(recommendation.severity)">
+    <div class="severity-content">
+      <p [innerHTML]="recommendation.title"
+         class="recommendation-title">
+      </p>
+      <p *ngIf="recommendation.medgateTitle"
+         [innerHTML]="recommendation.medgateTitle"
+         class="medgate-recommendation-title">
+      </p>
+    </div>
+  </div>
+
+  <main>
+    <p [innerHTML]="recommendation.description">
+    </p>
+    <p *ngIf="recommendation.medgateDescription"
+       [innerHTML]="recommendation.medgateDescription"
+       class="medgate-recommendation-description">
+    </p>
+
+    <div class="button-area">
+      <button mat-flat-button
+              color="basic"
+              class="back-bag larger-button"
+              (click)="redirectBagWebsite()">
+        {{ 'screening.bag' | translate }}
+      </button>
+      <button mat-flat-button
+              color="primary"
+              class="larger-button"
+              routerLink="/screening">
+        {{ 'screening.restart' | translate }}
+      </button>
+    </div>
+  </main>
+</div>

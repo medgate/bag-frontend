@@ -1,0 +1,22 @@
+version: '3.4'
+services:
+
+  mongodb:
+    ports:
+      - 27017:27017
+      
+  #bag-backend:
+  #  environment:
+  #    - SPRING_DATA_MONGODB_HOST=mongodb
+  #    - SPRING_DATA_MONGODB_PORT=2107
+  #    - SPRING_DATA_MONGODB_PASSWORD=
+  #    - SPRING_DATA_MONGODB_DATABASE=bag
+  #    - SECURITY_EXPORTER_USERNAME=exporter
+  #    - SECURITY_EXPORTER_PASSWORD=password
+  #  ports:      
+  #    - "8080:8080" 
+
+  bag-frontend:
+    ports:
+      - "80:80"
+ 

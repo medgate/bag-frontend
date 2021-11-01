@@ -1,0 +1,18 @@
+header {
+  min-height: 82px;
+  background-color: #FFED00;
+
+  mat-toolbar {
+    background-color: #FFED00;
+    align-items: flex-start;
+    height: 72px;
+
+    .logo {
+      cursor: pointer;
+    }
+
+    h1.header-title {
+      font-size: 13px;
+    }
+  }
+}

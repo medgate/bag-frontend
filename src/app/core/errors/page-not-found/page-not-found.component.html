@@ -1,0 +1,9 @@
+<header>
+  <mat-toolbar>
+    <img class="logo" src="assets/images/logo-large.svg" alt="BAG" (click)="redirectBagWebsite()">
+  </mat-toolbar>
+</header>
+<div class="error">
+  <div>{{ 'errors.notFound' | translate }}</div>
+  <a class="back" routerLink="/">{{ 'errors.back' | translate }}</a>
+</div>

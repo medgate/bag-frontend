@@ -1,0 +1,18 @@
+version: '3.4'
+services:
+
+  mongodb:
+    image: mongo
+    
+  bag-backend:
+    image: ${REGISTRY:-medgatepmsacrdetst.azurecr.io}/bag-corona/bag-backend:develop
+    depends_on:
+      - mongodb
+
+  bag-frontend:
+    image: ${REGISTRY:-medgatepmsacrdetst.azurecr.io}/bag-corona/bag-frontend:${TAG:-develop}
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    depends_on:
+      - bag-backend

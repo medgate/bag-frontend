@@ -1,0 +1,15 @@
+export enum Symptom {
+  NO_SYMPTOMS = "noSymptoms",
+  FEVER = "fever",
+  WEAKNESS = "weakness",
+  HEADACHES = "headaches",
+  SNIFFLES = "sniffles",
+  SORE_THROAT = "soreThroat",
+  COUGH = "cough",
+  SHORTNESS_BREATH = "shortnessBreath",
+  CHEST_PAIN = "chestPain",
+  GASTRO = "gastro",
+  MUSCLE_PAIN = "musclePain",
+  LOST_SMELL_OR_TASTE = "lostSmellOrTaste",
+  SKIN_RASH = "skinRash",
+}

@@ -1,0 +1,86 @@
+{
+  "header": {
+    "title": "Coronavirus-Check"
+  },
+  "footer": {
+    "office": "©2020 Bundesamt für Gesundheit",
+    "legal": "Rechtliche Grundlagen",
+    "imprint": "Impressum",
+    "link": {
+      "office": "https://www.bag.admin.ch/bag/de/home.html",
+      "legal": "https://bag-coronavirus.ch/rechtliche-grundlagen/",
+      "imprint": "https://bag-coronavirus.ch/impressum/"
+    }
+  },
+  "errors": {
+    "title": "Coronavirus-Check",
+    "back": "Zurück",
+    "notFound": "Seite nicht gefunden",
+    "forbidden": "Verboten",
+    "unexpected": "Ein unerwarteter Fehler ist aufgetreten. Bitte wiederholen Sie."
+  },
+  "intro": {
+    "title": "Coronavirus-Check",
+    "description": "Beantworten Sie alle Fragen im Check. Dann erhalten Sie eine Empfehlung, was Sie tun sollten.",
+    "start": "Check starten",
+    "disclaimer": {
+      "title": "Wichtiger Hinweis:",
+      "main": "Der Coronavirus-Check ist kein Ersatz für eine professionelle medizinische Beratung, Diagnose oder Behandlung. Die im Check beschriebenen Symptome können auch in Zusammenhang mit anderen Krankheiten auftreten, die ein anderes Vorgehen erfordern.",
+      "advice": "Wenden Sie sich bei markanten Symptomen, die sich verschlimmern oder Sie beunruhigen, immer an eine Ärztin bzw. einen Arzt."
+    }
+  },
+  "screening": {
+    "next": "Weiter",
+    "back": "Zurück",
+    "restart": "Test wiederholen",
+    "bag": "Zur BAG-Webseite"
+  },
+  "profile": {
+    "title": "Persönliche Angaben",
+    "description": "Geben Sie Ihr Geschlecht, Alter und Ihren Kanton an.",
+    "button": "Weiter",
+    "age": {
+      "label": "Alter",
+      "disclaimer": "Das eingegebene Alter kann das Ergebnis beeinflussen.",
+      "required": "Bitte geben Sie Ihr Alter an.",
+      "invalid": "Alter muss zwischen 0 und 120 sein.",
+      "years": "Jahre"
+    },
+    "gender": {
+      "label": "Geschlecht",
+      "male": "Männlich",
+      "female": "Weiblich",
+      "other": "Andere",
+      "required": "Das Geschlecht ist erforderlich."
+    },
+    "canton": {
+      "label": "Kanton",
+      "required": "Der Kanton ist erforderlich.",
+      "invalid": "Bitte schreiben Sie den Kantonsnamen aus."
+    },
+    "symptomsQuestion": "Markieren Sie in der Liste alle Symptome, die Sie derzeit haben.",
+    "symptomsDescription": "Sie können auch mehrere Symptome markieren oder das Feld «kein Symptom». Mindestens ein Feld muss markiert sein.",
+    "symptoms": {
+      "noSymptoms": "Kein Symptom (aus der Liste unten)",
+      "fever": "Fieber",
+      "weakness": "Allgemeine Schwäche, Unwohlsein",
+      "headaches": "Kopfschmerzen",
+      "sniffles": "Schnupfen",
+      "soreThroat": "Halsschmerzen",
+      "cough": "Husten",
+      "shortnessBreath": "Kurzatmigkeit",
+      "chestPain": "Brustschmerzen",
+      "gastro": "Magen-Darm-Symptome (Übelkeit, Erbrechen, Durchfall, Bauchschmerzen)",
+      "musclePain": "Muskelschmerzen",
+      "lostSmellOrTaste": "Plötzlicher Verlust des Geruchs- und/oder Geschmackssinns",
+      "skinRash": "Hautausschlag"
+  }
+  },
+  "language": {
+    "label": "Sprache",
+    "german": "Deutsch",
+    "french": "Français",
+    "italian": "Italiano",
+    "english": "English"
+  }
+}

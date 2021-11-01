@@ -1,0 +1,86 @@
+{
+  "header": {
+    "title": "Autovalutazione sul coronavirus"
+  },
+  "footer": {
+    "office": "©2020 Ufficio federale della sanità pubblica UFSP",
+    "legal": "Basi legali",
+    "imprint": "Colophon",
+    "link": {
+      "office": "https://www.bag.admin.ch/bag/it/home.html",
+      "legal": "https://ufsp-coronavirus.ch/basi-legali/",
+      "imprint": "https://ufsp-coronavirus.ch/colophon/"
+    }
+  },
+  "errors": {
+    "title": "Autovalutazione sul coronavirus",
+    "back": "Indietro",
+    "notFound": "Pagina non trovata",
+    "forbidden": "Vietato",
+    "unexpected": "Si è verificato un errore inaspettato. Si prega di riprovare."
+  },
+  "intro": {
+    "title": "Autovalutazione sul coronavirus",
+    "description": "Risponda a tutte le domande. In seguito il sistema Le fornirà una raccomandazione adeguata alla Sua situazione.",
+    "start": "Avvio dell’autovalutazione",
+    "disclaimer": {
+      "title": "Avviso importante:",
+      "main": "L’autovalutazione sul coronavirus non sostituisce la consulenza, la diagnosi o il trattamento medico. I sintomi descritti nell’autovalutazione possono manifestarsi anche in relazione ad altre malattie che richiedono provvedimenti diversi.",
+      "advice": "Consulti sempre un medico se ha sintomi marcati che si aggravano o che La preoccupano."
+    }
+  },
+  "screening": {
+    "next": "Avanti",
+    "back": "Indietro",
+    "restart": "Ripetere il check",
+    "bag": "Sito web dell'UFSP"
+  },
+  "profile": {
+    "title": "Dati personali",
+    "description": "Immettere il sesso, l’età e il cantone.",
+    "button": "Avanti",
+    "age": {
+      "label": "Età",
+      "disclaimer": "L'età inserita può avere un effetto sul risultato.",
+      "required": "Immettere l’età.",
+      "invalid": "Il dato deve essere compreso fra 0 e 120.",
+      "years": "anni"
+    },
+    "gender": {
+      "label": "Sesso",
+      "male": "Maschile",
+      "female": "Femminile",
+      "other": "Altro",
+      "required": "È necessario indicare il sesso."
+    },
+    "canton": {
+      "label": "Cantone",
+      "required": "Il cantone è richiesto.",
+      "invalid": "Il nome del cantone deve essere scritto per esteso."
+    },
+    "symptomsQuestion": "Selezioni dall’elenco tutti i sintomi che ha attualmente.",
+    "symptomsDescription": "Può selezionare anche più sintomi o la casella «nessun sintomo». Deve essere selezionata almeno una casella.",
+    "symptoms": {
+      "noSymptoms": "Nessun sintomo (di quelli sottoelencati)",
+      "fever": "Febbre",
+      "weakness": "Malessere, debolezza generale",
+      "headaches": "Mal di testa",
+      "sniffles": "Raffreddore",
+      "soreThroat": "Mal di gola",
+      "cough": "Tosse ",
+      "shortnessBreath": "Affanno",
+      "chestPain": "Dolori al petto",
+      "gastro": "Sintomi gastrointestinali (nausea, vomito, diarrea, dolori addominali)",
+      "musclePain": "Dolori muscolari",
+      "lostSmellOrTaste": "Perdita improvvisa dell’olfatto e/o del gusto",
+      "skinRash": "Eruzioni cutanee"
+    }
+  },
+  "language": {
+    "label": "Lingua",
+    "german": "Deutsch",
+    "french": "Français",
+    "italian": "Italiano",
+    "english": "English"
+  }
+}

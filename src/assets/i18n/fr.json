@@ -1,0 +1,86 @@
+{
+  "header": {
+    "title": "Auto-évaluation coronavirus"
+  },
+  "footer": {
+    "office": "©2020 Office fédéral de la santé publique OFSP",
+    "legal": "Bases légales",
+    "imprint": "Empreinte",
+    "link": {
+      "office": "https://www.bag.admin.ch/bag/fr/home.html",
+      "legal": "https://ofsp-coronavirus.ch/bases-legales/",
+      "imprint": "https://ofsp-coronavirus.ch/empreinte/"
+    }
+  },
+  "errors": {
+    "title": "Auto-évaluation coronavirus",
+    "back": "Retour",
+    "notFound": "Page not found",
+    "forbidden": "Forbidden",
+    "unexpected": "Une erreur inattendue s’est produite. Veuillez réessayer, s’il vous plaît."
+  },
+  "intro": {
+    "title": "Auto-évaluation coronavirus",
+    "description": "Veuillez répondre à toutes les questions pour obtenir une recommandation sur le comportement à adopter.",
+    "start": "Démarrer le test",
+    "disclaimer": {
+      "title": "Avis important :",
+      "main": "L’auto-évaluation coronavirus ne remplace pas les conseils, le diagnostic ou le traitement par un professionnel de la santé. Les symptômes décrits dans l’auto-évaluation peuvent également apparaître en relation avec d'autres maladies qui nécessitent une procédure différente.",
+      "advice": "Consultez toujours un médecin si vous avez des symptômes marqués, qui s’aggravent ou qui vous préoccupent."
+    }
+  },
+  "screening": {
+    "next": "Suivant",
+    "back": "Retour",
+    "restart": "Répéter le test",
+    "bag": "Site web de l’OFSP"
+  },
+  "profile": {
+    "title": "Informations personnelles",
+    "description": "Indiquez votre sexe, âge et canton.",
+    "button": "Suivant",
+    "age": {
+      "label": "Âge",
+      "disclaimer": "L'âge saisi peut influencer le résultat.",
+      "required": "Indiquez votre âge.",
+      "invalid": "Vous devez saisir un âge entre 0 et 120 ans.",
+      "years": "ans"
+    },
+    "gender": {
+      "label": "Sexe",
+      "male": "Masculin",
+      "female": "Féminin",
+      "other": "Autre",
+      "required": "Le sexe est requis."
+    },
+    "canton": {
+      "label": "Canton",
+      "required": "Le canton est requis.",
+      "invalid": "Vous devez saisir le nom du canton."
+    },
+    "symptomsQuestion": "Sélectionnez dans la liste tous les symptômes que vous avez actuellement.",
+    "symptomsDescription": "Vous pouvez aussi sélectionner plusieurs symptômes ou « Aucun symptôme ». Au moins une indication doit être sélectionnée.",
+    "symptoms": {
+      "noSymptoms": "Aucun symptôme (de la liste ci-dessous)",
+      "fever": "Fièvre",
+      "weakness": "Faiblesse générale, sensation de malaise",
+      "headaches": "Maux de tête",
+      "sniffles": "Rhume",
+      "soreThroat": "Maux de gorge",
+      "cough": "Toux",
+      "shortnessBreath": "Insuffisance respiratoire",
+      "chestPain": "Douleurs dans la poitrine",
+      "gastro": "Symptômes gastro-intestinaux (nausées, vomissements, diarrhée, maux de ventre)",
+      "musclePain": "Douleurs musculaires",
+      "lostSmellOrTaste": "Perte soudaine de l’odorat et/ou du goût",
+      "skinRash": "Éruptions cutanées"
+    }
+    },
+  "language": {
+    "label": "Langue",
+    "german": "Deutsch",
+    "french": "Français",
+    "italian": "Italiano",
+    "english": "English"
+  }
+}
